@@ -1,0 +1,7 @@
+# For maven
+target/
+.class
+
+# For IDEA
+.idea/
+*.iml
