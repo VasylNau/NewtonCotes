@@ -17,8 +17,7 @@ import static org.assertj.core.api.Assertions.within;
 @RunWith(MockitoJUnitRunner.class)
 public class CalculationServiceTest {
 
-    @Mock
-    private CalculationService calculationService;
+    private CalculationService calculationService = new CalculationService();
 
     @Test
     public void testCalculateAndExpectZero() {

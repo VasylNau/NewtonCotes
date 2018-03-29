@@ -29,10 +29,8 @@ public class BaseControllerTest {
     public void getIndexPage() throws Exception {
          mockMvc.perform(get("/"))
                 .andExpect(status().isOk())
-                .andExpect(forwardedUrl("/WEB-INF/index.jsp"))
+                .andExpect(forwardedUrl("index"))
                 .andReturn();
     }
-
-
 
 }
